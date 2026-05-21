@@ -1,0 +1,47 @@
+# ── Données (trop lourdes pour git) ──────────────────────────────────────────
+data/listings.csv
+data/listings.csv.gz
+data/*.csv
+data/*.gz
+data/*.parquet
+
+# ── Modèles entraînés ─────────────────────────────────────────────────────────
+*.joblib
+*.pkl
+
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Environnements virtuels ───────────────────────────────────────────────────
+.env
+.venv/
+env/
+venv/
+
+# ── Anaconda / Jupyter ────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+.jupyter/
+profile_default/
+ipython_config.py
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Outputs intermédiaires ────────────────────────────────────────────────────
+outputs/*.png
+outputs/*.svg
+# (on garde metrics.json et model.joblib en outputs/ mais on les git-ignore si trop lourds)
