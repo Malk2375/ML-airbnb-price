@@ -96,11 +96,12 @@ model.predict(pd.DataFrame([sample]))
 
 | Modèle | R² (CV 5-fold) | MAE (€) |
 |---|---|---|
-| LinearRegression (baseline) | - | - |
-| Ridge | - | - |
-| RandomForestRegressor | - | - |
+| LinearRegression (baseline) | 0.593 | 73.87 |
+| Ridge | 0.593 | 73.83 |
+| RandomForestRegressor | 0.687 | 67.08 |
 
-> *Tableau à compléter après entraînement*
+> Évaluation finale sur le test set (RandomForest) : **R² = 0.717**, **MAE = 66.72 €**.
+> Outliers de prix filtrés à `10 € ≤ price ≤ 1 000 €` (5 % des lignes).
 
 ---
 

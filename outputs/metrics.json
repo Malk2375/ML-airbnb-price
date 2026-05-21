@@ -1,0 +1,53 @@
+{
+  "model": "RandomForestRegressor wrapped in TransformedTargetRegressor(log1p / expm1)",
+  "features": [
+    "host_response_rate",
+    "host_acceptance_rate",
+    "host_is_superhost",
+    "neighbourhood_cleansed",
+    "property_type",
+    "room_type",
+    "accommodates",
+    "bathrooms",
+    "bedrooms",
+    "beds",
+    "minimum_nights",
+    "number_of_reviews",
+    "review_scores_rating",
+    "reviews_per_month",
+    "availability_365",
+    "has_wifi",
+    "has_tv",
+    "has_kitchen",
+    "has_air_conditioning",
+    "has_pool"
+  ],
+  "cv_results": [
+    {
+      "Model": "LinearRegression",
+      "MAE mean": 73.87135997955151,
+      "MAE std": 1.6938773832497525,
+      "R2 mean": 0.5930784908884246,
+      "R2 std": 0.022253747997164494
+    },
+    {
+      "Model": "Ridge",
+      "MAE mean": 73.83467593648223,
+      "MAE std": 1.6670535658658243,
+      "R2 mean": 0.5928872764810893,
+      "R2 std": 0.021870740589831225
+    },
+    {
+      "Model": "RandomForest",
+      "MAE mean": 67.0794981547638,
+      "MAE std": 1.5633352135555632,
+      "R2 mean": 0.6871648763174433,
+      "R2 std": 0.008784885883592147
+    }
+  ],
+  "test_mae": 66.72335132325782,
+  "test_rmse": 106.71003631083654,
+  "test_r2": 0.7174234896428892,
+  "n_train": 8820,
+  "n_test": 2205
+}
